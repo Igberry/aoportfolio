@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ani's Freelance Hub – Creative Graphic Designer & Brand Consultant" />
+    <title>Ani's Freelance Hub</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">Ani<span>'</span>s Freelance Hub</div>
+            <nav id="nav-links" class="navigation" aria-label="Main Navigation">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Hello, I'm <span class="highlight">Ani</span></h1>
+                <p class="tagline">Creative Graphic Designer & Brand Consultant</p>
+                <a href="#contact" class="btn primary-btn">Hire Me</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Me</h2>
+                <h3>
+                    With over 7 years of professional experience in the creative industry, I specialize in delivering
+                    exceptional visual storytelling through expert logo creation, comprehensive brand identity
+                    development, and dynamic web visuals. My work focuses on helping businesses, from startups to
+                    established enterprises, stand out in crowded marketplaces by crafting clean, modern designs that
+                    are
+                    both aesthetically stunning and strategically aligned with their core values and objectives. I
+                    combine creativity with a deep understanding of marketing principles to create visuals that not only
+                    attract attention but build lasting connections between brands and their audiences. If you’re ready
+                    to elevate your brand’s presence and make a powerful impression that drives real results, let’s
+                    connect and bring your vision to life with designs that truly speak your story.
+                </h3>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Services</h2>
+                <ul class="card-list">
+                    <li class="card">
+                        <img src="images/logo-design.png" alt="Logo Design" />
+                        <h3>Logo Design</h3>
+                    </li>
+                    <li class="card">
+                        <img src="images/brand.png" alt="Brand Identity" />
+                        <h3>Brand Identity</h3>
+                    </li>
+                    <li class="card">
+                        <img src="images/social.png" alt="Social Media Graphics" />
+                        <h3>Social Media Graphics</h3>
+                    </li>
+                    <li class="card">
+                        <img src="images/web-design.png" alt="Web Design (UI/UX)" />
+                        <h3>Web Design (UI/UX)</h3>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="section portfolio">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <img src="images/project.png" alt="Project 1 Screenshot" />
+                        <p>Modern, abstract, dynamic design, representing innovation, growth, and forward-thinking
+                            vision.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project2.png" alt="Project 2 Screenshot" />
+                        <p>Clean, minimalist, professional design, embodying trust, reliability, and established
+                            quality.
+                        </p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project3.png" alt="Project 3 Screenshot" />
+                        <p>Clean, modern, intuitive UI/UX for seamless web page experience.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project4.png" alt="Project 4 Screenshot" />
+                        <p>Elegant, user-focused layout, clean design, promoting seamless interaction.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project5.png" alt="Project 5 Screenshot" />
+                        <p>Cohesive, professional brand identity: logo, colors, typography, and visual style.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project6.png" alt="Project 6 Screenshot" />
+                        <p>RENDA beauty magazine: elegant cover, flawless model, luxurious aesthetic.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project7.png" alt="Project 7 Screenshot" />
+                        <p>RENDA branded T-shirt: casual, stylish, clear, prominent, comfortable wear.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <img src="images/project8.png" alt="Project 8 Screenshot" />
+                        <p>Vibrant, engaging social media graphics: diverse, eye-catching, perfect for platforms.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>
+                    Email Me At
+                    <a class="mail" href="mailto:anisfreelancehub@gmail.com">anisfreelancehub@gmail.com</a> Or a Direct
+                    Message Below:
+                </p>
+                <div id="contact" class="section" data-aos="fade-up">
+                    <form id="contactForm" novalidate>
+                        <input type="text" name="name" id="name" placeholder="Your Name" required minlength="2" />
+                        <input type="email" name="email" id="email" placeholder="Your Email" required />
+                        <textarea name="message" id="message" placeholder="Your Message" required
+                            minlength="10"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                        <p id="formResponse" role="alert" aria-live="polite"></p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="socials">
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Behance">Behance</a>
+        </div>
+        <div class="container">
+            <p>&copy; 2025 Ani's Freelance Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
